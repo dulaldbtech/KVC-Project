@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <style>
+        body,
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #banner {
+            height: 600px;
+            background-image: url('./attachments/banner.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #banner h1 {
+            color: #9fd19a;
+            font-weight: bold;
+        }
+
+        .buttons {
+            width: 220px;
+            color: #ffffff;
+            background-color: #9fd19a;
+            border-radius: 50px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #read-more {
+            width: 10em;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #9fd19a;
+            border-radius: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        #feeding-inovation p {
+            font-size: 14px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #grid-content li:before {
+            font-family: "FontAwesome";
+            font-weight: 900;
+            font-size: 22px;
+            content: "\f0da";
+            margin-right: 10px;
+            color: #9fd19a;
+        }
+
+        .card-text {
+            font-size: 14px;
+            height: 100px;
+        }
+
+        .btn-success {
+            background-color: #9fd19a;
+        }
+
+        footer ul li {
+            display: inline-block;
+            color: #ffffff;
+        }
+
+        footer ul {
+            padding: 0;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        .footer-bg {
+            color: #ffffff;
+            background-color: #9fd19a;
+            border-top-right-radius: 50px;
+            transform: rotate(0deg);
+            height: 90px;
+            padding: 16px;
+        }
+
+        .lg-hide {
+            display: none;
+        }
+
+
+        /* ------------- Responsive Code ------------------ */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .card-title {
+                font-size: 2rem;
+            }
+
+            .card-text {
+                font-size: 16px;
+                height: 100px;
+                margin-top: 20px;
+            }
+
+            #download-recipe .btn-success {
+                padding: 16px;
+            }
+
+            .buttons {
+                margin-bottom: 10px;
+                width: 18em !important;
+            }
+
+            .btn-success {
+                display: flex;
+                justify-content: center;
+            }
+
+            #read-more {
+                width: 22em;
+                padding: 12px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            #banner {
+                height: 400px;
+            }
+
+            .lg-show {
+                display: none;
+            }
+
+            .lg-hide {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="banner">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="row pt-4 pl-5">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <a href="">
+                        <img class="d-block" src="" alt="logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xlg-7">
+                    <h1 class="pl-5 pt-5 mt-5 lg-show">Superior Taste in Plant-based Beverages</h1>
+                    <h1 class="lg-hide">Superior Taste in Plant-based Beverages</h1>
+                    <h5 class="pt-2 pl-5">Missed out on the live webinar? No problem! watch it here</h5>
+                </div>
+            </div>
+            <div class="row pl-5 mt-5">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <a href="">
+                        <div class="buttons float-left mr-2 p-2">Click to Watch webinar</div>
+                    </a>
+                    <a href="">
+                        <div class="buttons float-left mr-2 p-2" style="width: 15em;">Take me to new ingredients</div>
+                    </a>
+                    <a href="">
+                        <div class="buttons float-left p-2" style="width: 17em;">Take me to receipe downloads</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Download Recipe -->
+    <section id="download-recipe" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <h2>Download your receipes here</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xlg-3">
+                    <div class="card">
+                        <img src="./attachments/photo-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Soy cappuccino</h5>
+                            <p class="card-text">Strike the right delicate balance of flavours every time with
+                                Kievit<sup>®</sup> Vana-Cappa V780 AND V785.</p>
+                            <a href="#" class="btn btn-success border-0">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xlg-3">
+                    <div class="card">
+                        <img src="./attachments/photo-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Oat cappuccino</h5>
+                            <p class="card-text">Reliably achieve a taste sensation with Kievit<sup>®</sup> Vana-Cappa
+                                V840 for in-home brewing machines</p>
+                            <a href="#" class="btn btn-success border-0">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xlg-3">
+                    <div class="card">
+                        <img src="./attachments/photo-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Frothy vegan Choccino</h5>
+                            <p class="card-text">Create a stable and tasty foam with Kievit<sup>®</sup> Vana-Cappa V785.
+                            </p>
+                            <a href="#" class="btn btn-success border-0">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xlg-3">
+                    <div class="card">
+                        <img src="./attachments/photo-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu oat latte</h5>
+                            <p class="card-text">A vegan treat that refuses to compromise on taste or texture based on
+                                Kievit<sup>®</sup>Vana-Cappa V840 and Kievit<sup>®</sup>® Vana-Cappa B01</p>
+                            <a href="#" class="btn btn-success border-0">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Grid Content-->
+    <section id="grid-content" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <h2>A protfolio that performs for you</h2>
+                    <p>Four innovative creamers deliver a great taste and solubility - unprecedented in the market by a:
+                    </p>
+                    <ul class="p-0">
+                        <li>NON-GMO</li>
+                        <li>Gluten-free</li>
+                        <li>Non-HVO</li>
+                        <li>Free from silicon dioxide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <img src="" alt="" srcset="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <h4>Kievit<sup>®</sup> Vana -Cappa vV840</h4>
+                    <p>With Vana-Cappa V840, an oat-based foaming non gassed foamer, you can finally create vegan
+                        alternatives of consumer’s
+                        favourite drinks with an unparalleled taste sensation time after time. Prefect for a balanced
+                        ‘oat flat white’ or for a
+                        nice ‘oat cappuccino’ when using in-home brewing machines</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <h4>Kievit<sup>®</sup> Vana -Cappa vV840</h4>
+                    <p>Count on Vana-Cappa V785, a soy-based foaming creamer, to maintain the delicate balance of
+                        flavours in plant-based
+                        beverages</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <img src="" alt="" srcset="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <h4>Kievit<sup>®</sup> Vana -Cappa vV840</h4>
+                    <p>Achieve the perfect balance of roast and ground coffee notes and a good foam layer from in-home
+                        brewing machines, with
+                        Vana-Cappa V780, a soy-based foamer for in-home brewing systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lead Capture -->
+    <section id="lead-capture" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <!-- Programme Details -->
+                    <h2>A helping hand to a confident market launch</h2>
+                    <p>Four innovative (foaming) creamers deliver a great taste and solubility - unprecedented in the
+                        market.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <!-- Programme Details -->
+                    <p>The plant-based market offers huge potential. But creating vegan beverages without compromising
+                        on taste and mouthfeel is a challenge</p>
+                    <p>Join us as we talk plant-based (upward) trends and insights, market drivers, the impact of
+                        COVID-19, and how you can successfully tap into this lucrative market.</p>
+
+                    <h4 class="mt-5"><b>Date:</b> <span>Thrusday, 24 September 2020</span></h4>
+                    <h4 class="mt-4"><b>Time:</b> <span>11:00 CET / 17:00 SGT</span></h4>
+                    <p class="mt-4"><b>How to join:</b> Simply click on the link and we'll email you when you complete
+                        the registration form</p>
+                    <p>Developing a new prouct from scratch is time-consuming and costly. And you want your product on
+                        the shelves as quickly as possible to start generating revenue</p>
+                    <p>Why do it all yourself, when you can count on us for support at every step of the way?</p>
+                    <p>From ideation, research and prototyping to tasting sessions, sensory panels and refining:
+                        benefits from our in-house services, and take some of the uncertanity out of launching a new
+                        product successfully</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <!-- Pardot Form -->
+                    <iframe src="https://info.frieslandcampinaingredients.com/l/551312/2020-08-11/9kscyc" width="100%"
+                        height="500" type="text/html" frameborder="0" allowTransparency="true"
+                        style="border: 0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feeding Innovation -->
+    <section id="feeding-inovation" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                    <!-- Programme Details -->
+                    <h2>FrieslandCampina Ingredients: feeding inovation</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xlg-7">
+                    <!-- Programme Details -->
+                    <p class="mt-3">Our food and beverages heritage dates back over 125 years, so we know what we are
+                        talking about.
+                        We're all ears too! Our unique listening programme tracks and identifies the latest trends. And
+                        we're passionate about delivering premium quality ingredients in response. Plant-based being
+                        just one example!</p>
+                    <a href="">
+                        <div id="read-more" class="mt-4 mb-4">Read more</div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xlg-5">
+                    <img src="./attachments/photo-1.jpg" alt="Feeding Innovation">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                        <div id="follow" class="float-right">
+                            <h5 class="d-block float-left pr-2">Follow us on LinkedIn</h5>
+                            <img width="22px" src="./attachments/linkedin.svg" alt="LinkedIn">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+                        <ul class="float-right">
+                            <li class="mr-3">
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li class="mr-3">
+                                <a href="">Cookie Policy</a>
+                            </li>
+                            <li class="mr-3">
+                                <a href="">Disclaimer</a>
+                            </li>
+                            <li class="mr-3">
+                                <a href="">Manage Cookie Prefernce</a>
+                            </li>
+                            <li>
+                                <a href="">FrieslandCampina Ingredients</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
