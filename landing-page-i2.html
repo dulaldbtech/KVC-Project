@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rand Landing Page</title>
+    <title>Superior Taste in Vegan Beverages</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -18,6 +18,7 @@
             -webkit-font-smoothing: antialiased;
             height: 100%;
         }
+
         /* section {
             min-height: 100%;
         } */
@@ -48,6 +49,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
 
         #read-more {
@@ -127,7 +129,7 @@
             width: 30em;
             height: 500px;
             border-bottom-right-radius: 50px;
-            background: #a6a4a4;
+            background: #5d5d5d;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -179,6 +181,12 @@
 
         /* ------------- Responsive Code ------------------ */
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+            h1,
+            h4 {
+                text-align: center;
+            }
+
             .card {
                 margin-bottom: 20px;
             }
@@ -363,19 +371,19 @@
         /*------------ Smooth Scroll --------------*/
 
         $(document).ready(function () {
-                // Add smooth scrolling to all links
-                $("a").on('click', function (event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
+        });
 
     </script>
 </head>
@@ -383,11 +391,11 @@
 <body>
     <div class="container-fluid">
         <!-- Logo -->
-        <div class="row pt-4 pl-5">
+        <div class="row pt-4 pl-4">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xlg-6">
                 <a href="">
                     <img width="200px" class="d-block"
-                        src=" https://info.frieslandcampinaingredients.com/l/551312/2020-09-17/9kz7lp/551312/331362/FCI_logo_compact.png"
+                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-23/9l3nqs/551312/332081/FrieslandCampinaIngredients_LOGO_Food_Beverage_CMYK.jpg"
                         alt="logo" />
                 </a>
             </div>
@@ -400,38 +408,42 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 pt-5 mt-3">
                     <h1 class="pt-5 mt-5 lg-show text-center">Superior Taste in Plant-based Beverages</h1>
                     <h1 class="lg-hide">Superior Taste in Plant-based Beverages</h1>
-                    <h4 class="pt-2 text-center lg-show">Missed out on the live webinar? No problem! watch it here</h4>
+                    <h4 class="pt-2 text-center lg-show">Missed out on the live webinar? No problem! Watch it here</h4>
                     <h4 class="pt-2 lg-hide">Missed out on the live webinar? No problem! watch it here</h4>
                 </div>
             </div>
             <div class="row mt-5 lg-show">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
                     <div class="d-flex justify-content-center">
-                        <a href="">
-                            <div class="buttons float-left mr-2 p-2" style="width: 14em;">Click to watch webinar</div>
+                        <a href="https://player.vimeo.com/video/461376626" target="_blank">
+                            <div class="buttons float-left mr-2 p-2" style="width: 14em;">Click to watch the webinar
+                            </div>
                         </a>
                         <a href="#download-recipe">
                             <div class="buttons float-left mr-2 p-2" style="width: 18em;">Take me to the new ingredients
                             </div>
                         </a>
                         <a href="#grid-content">
-                            <div class="buttons float-left p-2" style="width: 18em;">Take me to recipe downloads</div>
+                            <div class="buttons float-left p-2" style="width: 18em;">Take me to the recipe downloads
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 lg-hide">
+            <div class="row mt-2 lg-hide">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
                     <div class="">
                         <a href="">
-                            <div class="buttons float-left mr-2 p-2" style="width: 18em;">Click to watch webinar</div>
+                            <div class="buttons float-left mr-2 p-2" style="width: 18em;">Click to watch THE webinar
+                            </div>
                         </a>
                         <a href="#download-recipe">
-                            <div class="buttons float-left mr-2 p-2" style="width: 18em;">Take me to the new ingredients
+                            <div class="buttons float-left mr-2 p-2" style="width: 18em;">Take me to THE new ingredients
                             </div>
                         </a>
                         <a href="#grid-content">
-                            <div class="buttons float-left p-2" style="width: 18em;">Take me to recipe downloads</div>
+                            <div class="buttons float-left p-2" style="width: 18em;">Take me to THE recipe downloads
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -483,7 +495,7 @@
                         <img src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-17/9kz7tm/551312/331382/Vegan_choco_rounded.png"
                             class="card-img-top" alt="Vegan cappuccino">
                         <div class="card-body">
-                            <h5 class="card-title">Frothy vegan Choccino</h5>
+                            <h5 class="card-title">Vegan choccocino</h5>
                             <p class="card-text">Create a stable and tasty foam with Kievit<sup>®</sup> Vana-Cappa V785.
                             </p>
                             <div class="d-flex justify-content-center">
@@ -519,16 +531,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
                     <h2>A portfolio that performs for you</h2>
                     <p>Three innovative creamers deliver a great taste and solubility - unprecedented in the market. Our
-                        creamers are:
+                        foaming creamers are:
                     </p>
                     <ul class="p-0">
-                        <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg" alt="checkmark" /><span
+                        <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
                                 class="d-inline-block pl-2">NON-GMO</span></li>
-                        <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg" alt="checkmark" /><span
+                        <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
                                 class="d-inline-block pl-2">Gluten-free</span></li>
-                        <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg" alt="checkmark" /><span
+                        <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
                                 class="d-inline-block pl-2">Non-HVO</span></li>
-                        <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg" alt="checkmark" /><span
+                        <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
                                 class="d-inline-block pl-2">Free from silicon dioxide</span></li>
                     </ul>
                 </div>
@@ -536,8 +548,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
                     <div id="card-img-1" class="card-imgs p-5 mb-4 mt-5">
-                        <h4 style="font-weight: 600;color: #5d5d5d;">Kievit<sup>®</sup> Vana-Cappa V840</h4>
-                        <p class="mt-3" style="color: #5d5d5d;">With Vana-Cappa V840, an oat-based foaming non gassed
+                        <h4 style="font-weight: 600;">Kievit<sup>®</sup> Vana-Cappa V840</h4>
+                        <p class="mt-3">With Vana-Cappa V840, an oat-based foaming non gassed
                             foamer, you can finally
                             create vegan
                             alternatives of consumer’s favourite drinks with an unparalleled taste sensation time after
@@ -553,26 +565,26 @@
                             results you can rely on time
                             after time.</p>
                         <ul class="p-0">
-                            <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg"
-                                    alt="checkmark" /><span class="d-inline-block pl-2">A taste sensation unprecedented
+                            <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
+                                    class="d-inline-block pl-2">A taste sensation unprecedented
                                     in the vegan market</span></li>
-                            <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg"
-                                    alt="checkmark" /><span class="d-inline-block pl-2">Excellent balance of delicate
+                            <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
+                                    class="d-inline-block pl-2">Excellent balance of delicate
                                     flavours</span></li>
-                            <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg"
-                                    alt="checkmark" /><span class="d-inline-block pl-2">No compromise on foam texture
+                            <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
+                                    class="d-inline-block pl-2">No compromise on foam texture
                                     and stability</spaNo compromise on foam texture and stabilityn>
                             </li>
-                            <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg"
-                                    alt="checkmark" /><span class="d-inline-block pl-2">Predictable performance every
+                            <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
+                                    class="d-inline-block pl-2">Predictable performance every
                                     time</span></li>
-                            <li><img width="22px" src="./attachments/check_mark.jpg" alt="checkmark" /><span
+                            <li><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
                                     class="d-inline-block pl-2">Versatility of application including instant mixes and
                                     single-serve </span></li>
                             <li class="d-inline-block pl-4 ml-2 mb-2">brewing systems and in coffee, chocolate, tea and
                                 more</li>
-                            <li class="mb-2"><img width="22px" src="./attachments/check_mark.jpg"
-                                    alt="checkmark" /><span class="d-inline-block pl-2">Ingredients backed by 150 years
+                            <li class="mb-2"><img width="22px" src="https://bit.ly/2GsMKTy" alt="checkmark" /><span
+                                    class="d-inline-block pl-2">Ingredients backed by 125 years
                                     of expertise</span></li>
                         </ul>
                     </div>
@@ -580,16 +592,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
 
                     <div id="card-img-2" class="card-imgs p-5 mb-4">
-                        <h4 style="font-weight: 600;color: #5d5d5d;">Kievit<sup>®</sup> Vana -Cappa V785</h4>
-                        <p class="mt-3" style="color: #5d5d5d;">Count on Vana-Cappa V785, a soy-based foaming creamer,
+                        <h4 style="font-weight: 600;color: #FFFFFF;">Kievit<sup>®</sup> Vana -Cappa V785</h4>
+                        <p class="mt-3" style="color: #FFFFFF;">Count on Vana-Cappa V785, a soy-based foaming creamer,
                             to maintain the delicate
                             balance of
                             flavours in plant-based
                             beverages</p>
                     </div>
                     <div id="card-img-3" class="card-imgs p-5 ">
-                        <h4 style="font-weight: 600;color: #5d5d5d;">Kievit<sup>®</sup> Vana-Cappa V780</h4>
-                        <p class="mt-3" style="color: #5d5d5d;">Achieve the perfect balance of roast and ground coffee
+                        <h4 style="font-weight: 600;color: #FFFFFF;">Kievit<sup>®</sup> Vana-Cappa V780</h4>
+                        <p class="mt-3" style="color: #FFFFFF;">Achieve the perfect balance of roast and ground coffee
                             notes and a good foam
                             layer from
                             in-home
@@ -631,6 +643,12 @@
 
             <div class="row mt-4">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
+                    <img width="430px" style="border-radius: 10px;"
+                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-19/9l1r48/551312/331647/Innovation_unsplash.jpg"
+                        alt="" srcset="">
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
                     <p class="para-text mt-3">Developing a new prouct from scratch is time-consuming and costly. And you
                         want
                         your product on
@@ -641,13 +659,7 @@
                         refining:
                         benefits from our in-house services, and take some of the uncertanity out of launching a new
                         product successfully</p>
-                    <!-- <img class="w-75 lg-show" src="./attachments/photo-3.jpg" alt="Form Image">
-                    <img class="w-100 lg-hide mb-4" src="./attachments/photo-3.jpg" alt="Form Image"> -->
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xlg-6">
-                    <!-- Pardot Form -->
-                    <img width="430px" style="border-radius: 10px;" src="./attachments/Oat Flat White pic.jpg" alt=""
-                        srcset="">
+
                 </div>
             </div>
         </div>
@@ -675,11 +687,12 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xlg-4">
-                    <img class="d-block mt-3 w-100" src="./attachments/Oat Flat White pic.jpg" alt="Feeding Innovation">
+                    <img class="d-block mt-3 w-100" src="https://bit.ly/2Euu6dc" alt="Feeding Innovation">
                 </div>
             </div>
         </div>
     </section>
+    <br>
     <!-- Footer -->
     <footer class="mt-1">
         <div class="footer-bg">
@@ -688,15 +701,11 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
                         <div id="follow" class="float-right lg-show">
                             <h5 class="float-left pr-2">Follow us on LinkedIn</h5>
-                            <img width="28px"
-                                src="./attachments/linkedin.svg"
-                                alt="LinkedIn">
+                            <img width="28px" src="https://bit.ly/2Ew201g" alt="LinkedIn">
                         </div>
                         <div id="follow" class="lg-hide">
                             <h5 class="float-left pr-2">Follow us on LinkedIn</h5>
-                            <img width="28px"
-                                src="./attachments/linkedin.svg"
-                                alt="LinkedIn">
+                            <img width="28px" src="https://bit.ly/2Ew201g" alt="LinkedIn">
                         </div>
                     </div>
                 </div>
@@ -757,7 +766,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title"> </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -784,14 +793,14 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title"> </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <iframe id="form-pardot"
-                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-17/9kz82f" width="100%"
+                        src="	https://info.frieslandcampinaingredients.com/l/551312/2020-09-24/9l3pss" width="100%"
                         height="700" type="text/html" frameborder="0" allowTransparency="true"
                         style="border: 0"></iframe>
                 </div>
@@ -811,14 +820,14 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title"> </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <iframe id="form-pardot"
-                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-17/9kz82f" width="100%"
+                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-24/9l4rxl" width="100%"
                         height="700" type="text/html" frameborder="0" allowTransparency="true"
                         style="border: 0"></iframe>
                 </div>
@@ -838,14 +847,14 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title"> </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <iframe id="form-pardot"
-                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-17/9kz82f" width="100%"
+                        src="https://info.frieslandcampinaingredients.com/l/551312/2020-09-24/9l4rxn" width="100%"
                         height="700" type="text/html" frameborder="0" allowTransparency="true"
                         style="border: 0"></iframe>
                 </div>
